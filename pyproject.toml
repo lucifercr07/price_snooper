@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "price-snooper"
+version = "0.1.0"
+description = ""
+authors = ["pshubham <pshubham@salesforce.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+beautifulsoup4 = "^4.12.3"
+requests = "^2.31.0"
+click = "^8.1.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
