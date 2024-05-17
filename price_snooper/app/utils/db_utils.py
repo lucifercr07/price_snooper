@@ -46,7 +46,7 @@ class DatabaseUtil:
                 schema_queries = f.read()
                 self.cursor.executescript(schema_queries)
                 self.conn.commit()
-            print("Database schema initialized successfully!")
+            # print("Database schema initialized successfully!")
         except sqlite3.Error as e:
             raise RuntimeError(f"Error initializing schema: {e}")
 

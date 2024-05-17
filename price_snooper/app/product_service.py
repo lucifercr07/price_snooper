@@ -19,7 +19,7 @@ class ProductService:
     def __init__(self, product_dao):
         self.product_dao = product_dao
 
-    def create_product(self, product_url, expected_discount=None):
+    def create_product(self, product_url, expected_discount=0.0):
         payload = json.dumps({
             "url": product_url
         })
